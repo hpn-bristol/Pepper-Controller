@@ -131,8 +131,3 @@ if __name__ == "__main__":
     port = 9559
     robot = Pepper(ip_address, port)
     basic_demo(robot)
-
-
-
-
-
