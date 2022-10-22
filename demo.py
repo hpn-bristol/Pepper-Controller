@@ -62,7 +62,7 @@ class PepperDemo:
     def getAnswer(self, dic, recorded):
         """looks for a recorded answer in a dictionar"""
         for x in dic.keys():
-            if dic[x] in recorded.lower():
+            if recorded.lower() in dic[x]:
                 return x
         return None
 
@@ -102,7 +102,7 @@ class PepperDemo:
         """there is a modifiable grammar error sometimes occurred.
         In order to deal with it you should change language to english and back"""
         self.robot.set_english_language()
-        self.robot.set_czech_language()
+        # self.robot.set_czech_language()
 
     def run(self):
         self.dealWithRecoErrors()
